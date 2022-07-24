@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="estilos.css">
+	<title>Flexbox y CSS Grid 1</title>
+</head>
+<body>
+	<header>
+        <div class="contenedor" id="inicio">
+            <div class="logo">PIZZAS ALEX</div>
+            <nav class="nav">
+                <ul>
+                    <li class="activo"""><a href="index.html">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="banner">
+       <div class="bannerContenedor">
+            <div class="bannerTitulo">
+                <h2>Super deliciosas pizzas</h2>
+                <p>Aquí encontraras las mejores pizzas preparadas con ingredientes selectos.</p>
+            </div>
+            <div class="bannerImg">
+                <img src="img/imgbanner.png"/>
+            </div>
+       </div>
+    </section>
+    <section class="productos" id="productos">
+        <h2>Nuestras especialidades</h2>
+        <div class="productosContenedor">
+            <div class="card">
+                <img src="img/1.jpg"/>
+                <p>Pizza napolitana. Está deliciosa con salami
+                napolitano, queso ricota y pimienta, pero también en una versión dulce con chocolate y azúcar glas.</p>
+            </div>
+            <div class="card">
+                <img src="img/2.jpg"/>
+                <p>Pizza romana. Crujiente  la masa se
+                hace con harina de mijo, cebada, espelta, sal, hierbas aromáticas y masa madre.</p>
+            </div>
+            <div class="card">
+                <img src="img/3.jpg"/>
+                <p>Pizza al trancio. Es una pizza gruesa y esponjosa cubierta por una buena capa de mozzarella y se vende, se cocinan en un horno eléctrico.</p>
+            </div>
+            <div class="card">
+                <img src="img/4.jpg"/>
+                <p>La sfincione de Palermo, una deliciosa y
+                esponjosa masa fermentada que se hornea y se condimenta con pan rallado, cebolla, queso caciocavallo y strattu.</p>
+            </div>
+            <div class="card">
+                <img src="img/5.jpg"/>
+                <p>Pizza molissana, elaborada con productos del campo, como achicoria, acelga y
+                repollo, y una pizza que se prepara con harina de maíz, agua, sal y unas cucharadas de aceite.</p>
+            </div>
+            <div class="card">
+                <img src="img/6.jpg"/>
+                <p>Pizza dietetica, su masa se hace con coliflor, clara de huevo y un poco de harina de arroz.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contacto" id="contacto">
+        <div class="contactoContenedor" >
+            <h2>Contactanos</h2>
+            <input type="text" placeholder="correo@correo.com"/>
+            <button>Enviar</button>
+        </div>
+    </section>
+    <footer>
+        <p>PIZZAS ALEX© 2022. Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

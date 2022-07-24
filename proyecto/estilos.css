@@ -1,0 +1,237 @@
+html,* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #2D3743;
+    color: white;
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+.contenedor {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 40%;
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    color: #FF7F0E;
+}
+
+.nav{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+li{
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+a:hover{
+    background-color: #FF7F0E;
+}
+.activo {
+    color: #FF7F0E;
+}
+
+/*estilos  del banner */
+.banner {
+    width: 100%;
+    height: 500px;
+    background-color: #2D3743;
+    display: flex;
+    justify-content: center;
+}
+.bannerContenedor {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;;
+}
+.bannerTitulo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 35px;
+    color: #FF7F0E;
+}
+.bannerTitulo p{
+    font-size: 20px;
+    color: white
+}
+.bannerImg {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* estilos seccion productos ´*/
+
+.productos {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productos h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.productosContenedor {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 40px;
+}
+.card {
+    width: 100%;
+    height: 350px;
+    background-color: tomato;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 250px;
+}
+.card p {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.contacto {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.contactoContenedor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactoContenedor h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.contactoContenedor input {
+    width: 50%;
+    height: 30px;
+    max-width: 300px;
+    border: 2px solid #FF7F0E;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contactoContenedor button {
+    width: 180px;
+    height: 30px;
+    background-color: #FF7F0E;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.contactoContenedor button:hover {
+    background-color: #eb6e01;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color:#000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*mediaqueries*/
+
+@media (max-width: 1024px) {
+    .bannerImg img{
+        width: 100%;     
+    }
+    .bannerTitulo h2{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 720px) {
+    .bannerContenedor{
+        flex-direction: column;
+    }
+    .bannerTitulo {
+        width: 100%;
+        text-align: center;
+    }
+    .bannerImg {
+        width: 70%;
+        text-align: center;
+    }
+
+    .productosContenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        flex-direction: column;
+        
+    }
+    .logo, .nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo {
+          font-size: 25px;
+        }
+        
+    .productos h2 {
+        text-align: center;
+    }
+    .productosContenedor {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
